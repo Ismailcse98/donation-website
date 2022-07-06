@@ -1,0 +1,331 @@
+/*===============================================
+ Common CSS 
+ ===============================================*/
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    color: #999;
+    font-size: 20px;
+}
+.container{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.container:after,
+.container:before{
+    content: "";
+    display: table;
+    clear: both;
+}
+.col-50{
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.col-20{
+    width: 20%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.col-33{
+    width: 33.33%;
+    float: left;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.row{
+    margin-left: -5%;
+    margin-right: -5%;
+}
+.padding-l-r{
+    padding-left: 2%;
+    padding-right: 2%;
+}
+.success-l-r{
+    padding-left: 0%;
+    padding-right: 0%;
+}
+img{
+    width: 100%;
+}
+h2{
+    margin: 0;
+}
+/*===============================================
+ Banner Area 
+ ===============================================*/
+ .banner-section{
+    background-image: url('../images/banner-1.png');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    text-align: center;
+    position: relative;
+ }
+ .banner-section::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,.6);
+    z-index: 5;
+ }
+ .banner-section .banner-content{
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 80%;
+    position: absolute;
+    z-index: 10;
+ }
+ .banner-section .banner-content h2,
+ .banner-section .banner-content p{
+    color: #fff;
+ }
+.banner-section .banner-content h2{
+    font-size: 50px;
+    font-family: 'Oswald', sans-serif;
+}
+.banner-section .banner-content #donate-btn{
+    background: green;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+ }
+ /*===============================================
+ Donate Area 
+ ===============================================*/
+ .donate-section{
+    margin: 150px 0;
+    text-align: center;
+ }
+.donate-section h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.donate-section .doante-amount{
+    border: 3px solid #ddd;
+    border-radius: 5px;
+    width: 80%;
+    height: 70px;
+    background: #ddd;
+    color: green;
+    margin: 50px 0;
+}
+.donate-section .doante-amount.active h4,
+.donate-section .doante-amount h4{
+    margin-top: 20%;
+    font-weight: bold;
+    font-size: 20px;
+}
+.donate-section .doante-amount.active{
+    border: 3px solid green;
+    border-radius: 5px;
+    background: lightgreen;
+    color: green;
+}
+.donate-section .donate-form input[type='text']{
+    width: 100%;
+    display: block;
+    border: 0px;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-size: 25px;
+}
+.donate-section .donate-form input:focus{
+    outline: 0px;
+}
+.donate-section .donate-form input[type='submit']{
+    background: green;
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+}
+ /*===============================================
+ Donate Plane Area 
+ ===============================================*/
+.donate-plane-section{
+    margin: 50px 0;
+    text-align: center;
+}
+.donate-plane-section h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.donate-plane-section p{
+    margin: 30px 0;
+}
+.donate-plane-section .doante-plane{
+    text-align: left;
+    padding: 25px 10px;
+    border-radius: 5px;
+}
+.donate-plane-section .doante-plane.food{
+    background: #EBF2F3;
+}
+.donate-plane-section .doante-plane.shelter{
+    background: #FDECE8;
+}
+.donate-plane-section .doante-plane.frame{
+    background: #FDF6D8;
+}
+.donate-plane-section .doante-plane img{
+    width: 20%;
+}
+.donate-plane-section .doante-plane h3{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 10px 0;
+    margin: 0;
+    color: #000;
+}
+.donate-plane-section .doante-plane p{
+    margin: 0;
+    color: #000;
+}
+
+/*===============================================
+ Contact Area 
+ ===============================================*/
+ .contact-section{
+    text-align: center;
+ }
+ .contact-section h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+ }
+ .contact-section .cotact-form{
+    color: #000;
+ }
+.contact-section .cotact-form h2{
+    font-size: 28px;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    margin: 10px 0;
+}
+.contact-section .cotact-form input[type='text']{
+    width: 100%;
+    padding: 5px;
+    height: 35px;
+    margin: 5px 0;
+}
+.contact-section .cotact-form input:focus{
+    outline: 0px;
+}
+.contact-section .cotact-form input[type='submit']{
+    background: green;
+    padding: 15px 20px;
+    font-size: 18px;
+    width: 100%;
+    border: 0px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #fff;
+
+}
+.contact-section .contact-location h2{
+    color: #000;
+    font-size: 28px;
+    border-bottom: 2px solid green;
+    padding-bottom: 10px;
+    margin: 10px 0;
+
+}
+ /*===============================================
+ Update Area 
+ ===============================================*/
+.update-section{
+    text-align: center;
+    margin: 60px 0;
+}
+.update-section h2{
+    color: #000;
+    font-weight: bold;
+    font-size: 45px;
+    font-family: 'Oswald', sans-serif;
+}
+.update-section .update{
+    width: 70%;
+    margin: 15px auto;
+    background: #FDF6D8;
+    padding: 60px 200px;
+    border-radius: 3px;
+}
+.update-section .update .email{
+    position: relative;
+}
+.update-section .update .email input[type='text']{
+    display: block;
+    width: 100%;
+    height: 35px;
+    background: #ddd;
+    border-radius: 5px;
+    border: 0px;
+    padding: 5px;
+    font-size: 18px;
+}
+.update-section .update .email input:focus{
+    outline: 0;
+}
+.update-section .update .subscribe{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.update-section .update .subscribe input[type='submit']{
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: green;
+    border-radius: 0px 5px 5px 0px;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+/*===============================================
+ Footer Area 
+ ===============================================*/
+.footer-section{
+    text-align: center;
+    background: #000;
+    padding: 25px 0;
+}
+.footer-section h2{
+    color: green;
+    font-family: 'Damion', cursive;
+}
+.footer-section p{
+    color: #fff;
+}
+
+
+
